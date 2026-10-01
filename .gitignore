@@ -1,0 +1,15 @@
+# Android / Gradle
+.gradle/
+**/build/
+local.properties
+*.iml
+.idea/
+.cxx/
+captures/
+.externalNativeBuild/
+.DS_Store
+
+# Keep Kiro steering and project configuration versioned.
+# Ignore only generated Kiro cache/output if present.
+.kiro/cache/
+.kiro/.cache/
