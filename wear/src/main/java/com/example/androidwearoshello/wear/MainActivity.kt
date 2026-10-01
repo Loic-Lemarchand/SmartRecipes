@@ -4,7 +4,6 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.padding
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -25,9 +24,9 @@ class MainActivity : ComponentActivity() {
 @Composable
 private fun WearApp() {
     MaterialTheme {
-        Scaffold(timeText = { TimeText() }) { padding ->
+        Scaffold(timeText = { TimeText() }) {
             ScalingLazyColumn(
-                modifier = Modifier.fillMaxSize().padding(padding),
+                modifier = Modifier.fillMaxSize(),
                 horizontalAlignment = Alignment.CenterHorizontally,
                 anchorType = ScalingLazyListAnchorType.ItemStart
             ) {
