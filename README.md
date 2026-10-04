@@ -15,10 +15,7 @@ Projet multi-module prêt à ouvrir dans Android Studio : une application télé
 
 Aucun SDK Android n'est requis sur la machine qui génère ce squelette ; la compilation et l'exécution se font dans Android Studio avec le SDK installé.
 
-## Initialiser Git
-Les scripts à la racine sont volontairement configurés par une variable en tête de fichier :
+## Design du logiciel 
+Application de recettes. La principale fonctionnalité de l'application est de permettre à l'utilisateur de parser automatiquement et facilement une recette trouvee et de la stocker dans cette application sur le cloud. Les source possibles mais ne s'y limitent pas si tu as d'autres idés/proposition sont les suivante : Reseau sociaux via un partage - Image donc nécessité de passer par un ocr, je ne sais pas s'il y a des libs kotlins qui permettent cela. - via un texte copié collé. - via un lien d'une page web. DDans tout ces cas de figures une IA doit parser rapidement et efficacement les différent éléments de l'entrée pour produire une recette avec une image, des ingredients et des étapes pour la réalisation de la recette. L'applic doit permettre de créé des "Collection" de recettes, donc de crééer des catégories. De produire, à partir de recette sélectionnés, une liste de course avec tout les ingrédients adaptés.
 
-- Bash : éditer `REPO_URL` dans `setup-git.sh`, puis `bash setup-git.sh`.
-- PowerShell : éditer `$REPO_URL` dans `setup-git.ps1`, puis `./setup-git.ps1`.
-
-Ils sont réexécutables : ils traitent un dépôt distant vide ou déjà initialisé (par exemple avec un README), tentent une fusion propre et s'arrêtent avec des instructions explicites si un conflit reste à résoudre.
+L'application wear os doit permettre surtout de consulter les recettes et d'avoir au poignet les recettes que l'on a créé
